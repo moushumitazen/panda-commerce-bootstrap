@@ -11,7 +11,7 @@
 
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,13 +25,16 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">shoes</a>
+                            <a class="nav-link" href="#watch">watch</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#shoes">shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
 
 
@@ -107,9 +110,11 @@
         <!-- slider end -->
     </header>
     <main>
-        <!-- categories start -->
+        <!-- categories watch start -->
         <section>
-            <div class="container text-center my-5">
+            <h2 class="container my-5">watch</h2>
+            <div class="container text-center my-5" id="watch">
+
                 <div class="row g-2">
                     <!-- single category -->
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -139,7 +144,7 @@
         </section>
         <!-- categories end -->
         <!-- shoes section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -189,7 +194,7 @@
         </section>
         <!-- shoes section end -->
         <!-- backpack section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -238,7 +243,25 @@
             </div>
         </section>
         <!-- backpack section end -->
+        <!-- subscribe start -->
+        <section style="height: 300px"
+            class="container rounded-3 d-flex justify-content-center align-items-center bg-info" id="subscribe">
+            <div>
+                <h2>let`s stay in touch</h2>
+                <p>get updates on sales, specials and more</p>
+                <form>
+                    <div class="mb-1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- subscribe end -->
     </main>
+    <footer class="m-5 text-center">
+        <p><small>@2023. panda commerce. all rights reserved. sofia, bulgaria.</small></p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
